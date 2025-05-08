@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AVCOE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .header {
+      background: #198754;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .content {
+      padding: 40px 0;
+    }
+    .footer {
+      background: #343a40;
+      color: white;
+      padding: 15px 0;
+    }
+    .navbar {
+      padding: 15px 0;
+      background: #006400;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-nav {
+      justify-content: center;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-size: 1.2rem;
+      padding: 12px 20px;
+      transition: all 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      background-color: #004d00;
+      border-radius: 5px;
+      transform: scale(1.05);
+    }
+    .navbar-nav .nav-link.active {
+      background-color: #004d00;
+      border-radius: 5px;
+    }
+    .navbar-toggler-icon {
+      background-color: white;
+    }
+    .col-50 {
+      width: 50%;
+    }
+    .col-25 {
+      width: 25%;
+    }
+    .mb-1 {
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: #f8f9fa;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+<section class="header">
+  <div class="container">
+    <h1>Amrutvahini College of Engineering</h1>
+    <p>NAAC A+, NBA Accredited, ISO Certified</p>
+    <img src="logo.png" alt="AVCOE Logo" class="header-logo">
+  </div>
+</section>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a href="#about" class="nav-link active">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#departments" class="nav-link">Departments</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="about" class="content">
+  <div class="container">
+    <h2 class="text-center mb-1">About</h2>
+    <p>AVCOE was established in 1983 under the leadership of Hon. Late. Bhausaheb Thorat and offers quality education with excellent infrastructure, NAAC A+ grade, NBA accreditation, and ISO 9001:2015 certification. It provides modern facilities, placement support, and experienced faculty.</p>
+  </div>
+</section>
+
+<section id="departments" class="bg-light content">
+  <div class="container">
+    <h2 class="text-center mb-1">Departments</h2>
+    <div class="row text-center">
+      <div class="col-50 mb-1">
+        <div class="card">Computer</div>
+      </div>
+      <div class="col-50 mb-1">
+        <div class="card">IT</div>
+      </div>
+      <div class="col-50 mb-1">
+        <div class="card">Mechanical</div>
+      </div>
+      <div class="col-50 mb-1">
+        <div class="card">Civil</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="content">
+  <div class="container">
+    <h2 class="text-center mb-1">Contact</h2>
+    <form>
+      <input type="text" class="form-control mb-2" placeholder="Name">
+      <input type="email" class="form-control mb-2" placeholder="Email">
+      <textarea class="form-control mb-2" rows="3" placeholder="Message"></textarea>
+      <button class="btn btn-success w-100">Submit</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer text-center">
+  <div class="container">
+    <p>© 2025 AVCOE, Sangamner</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
