@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyShop </title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header" style="background-color: #009688; color: white;">
+    <h1> MyShop</h1>
+  </div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" class="ui-btn-active">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div data-role="content">
+    <h2>Welcome to MyShop</h2>
+    <p>Your one-stop destination for quality products at affordable prices.</p>
+    <img src="shop-banner.jpg" alt="Shop Banner" style="width: 100%; height: auto;" />
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4> 2025 MyShop - All rights reserved</h4>
+  </div>
+</div>
+
+<!-- Products Page -->
+<div data-role="page" id="products">
+  <div data-role="header" style="background-color: #009688; color: white;">
+    <h1> Products</h1>
+  </div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products" class="ui-btn-active">Products</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li>
+        <a href="#">
+          <img src="product1.jpg" alt="Product 1" />
+          <h2>Smartphone</h2>
+          <p>₹15,000</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="product2.jpg" alt="Product 2" />
+          <h2>Headphones</h2>
+          <p>₹1,999</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="product3.jpg" alt="Product 3" />
+          <h2>Smartwatch</h2>
+          <p>₹4,499</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Browse More & Add to Cart</h4>
+  </div>
+</div>
+
+<!-- Cart Page -->
+<div data-role="page" id="cart">
+  <div data-role="header" style="background-color: #009688; color: white;">
+    <h1> Cart</h1>
+  </div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#cart" class="ui-btn-active">Cart</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div data-role="content">
+    <p>No items in cart yet.</p>
+    <a href="#products" class="ui-btn ui-btn-inline ui-icon-shop ui-btn-icon-left">Go to Products</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Checkout coming soon!</h4>
+  </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+  <div data-role="header" style="background-color: #009688; color: white;">
+    <h1> Contact Us</h1>
+  </div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+    </ul>
+  </div>
+
+  <div data-role="content">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your name" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your email" />
+      <label for="msg">Message:</label>
+      <textarea id="msg" placeholder="Your message"></textarea>
+      <button type="submit" class="ui-btn ui-btn-b">Submit</button>
+    </form>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Email us at: support@myshop.com</h4>
+  </div>
+</div>
+
+</body>
+</html>
